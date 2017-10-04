@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardBackgroundColor="#ffff"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_accpic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circle_light_blue_with_white_stroke"
+                android:src="@mipmap/ic_account_circle_white_24dp" />
+
+            <TextView
+                android:id="@+id/tv_accname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_accpic"
+                android:singleLine="true"
+                android:text="Demo Name"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_accname"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_accdesig"
+                android:layout_toRightOf="@id/iv_accpic"
+                android:singleLine="true"
+                android:text="General Manager" />
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/iv_accpic"
+                android:layout_below="@id/tv_accdesig"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/bt_open"
+                android:text="Open"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/greenbackbutton"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/bt_open"
+                android:layout_below="@id/tv_accdesig"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/bt_remove"
+                android:text="remove"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/redbackbutton"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

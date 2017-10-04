@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#FFFF"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Custom Url"
+        android:textColor="@color/logo_color"
+        android:id="@+id/tv_customurl"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_originalUrl"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/tv_customurl"
+        android:layout_marginTop="1dp"
+        android:text="originalUrl"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="30dp"
+        android:text="Share"
+        android:layout_marginTop="3dp"
+        android:id="@+id/bt_shareUrl"
+        android:background="@drawable/custombutton"
+        android:layout_below="@+id/tv_originalUrl"
+        />
+        <Button
+            android:layout_width="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:text="View"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:id="@+id/bt_viewUrl"
+            android:layout_toRightOf="@id/bt_shareUrl"
+            android:background="@drawable/custombutton"
+            android:layout_below="@+id/tv_originalUrl" />
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clicks : 18"
+        android:layout_toRightOf="@id/bt_shareUrl"
+        android:layout_below="@id/tv_originalUrl"
+        android:id="@+id/tv_countsclick"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18 Aug"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/tv_originalUrl"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/tv_date"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

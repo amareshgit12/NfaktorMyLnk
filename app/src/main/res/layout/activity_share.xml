@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainsharelay"
+    android:layout_height="match_parent"
+    tools:context="nfactornote.android.com.nfactorenote.Activity.ShareActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/yourlogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app_logo"
+            android:padding="8dp"
+            android:layout_gravity="left"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/im_consprof"
+            android:background="@mipmap/ic_account_circle_black_24dp"
+            android:backgroundTint="@color/dellorange"
+            android:layout_marginRight="20dp"></ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:id="@+id/im_conurls"
+            android:background="@mipmap/ic_language_black_24dp"
+            android:backgroundTint="@color/dellorange"
+            android:layout_marginRight="10dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize Your Link with Dell-Note"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:id="@+id/et_originalUrl"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/customedittext"/>
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/rd_custimize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customize"
+                android:layout_marginRight="10dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rd_short"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shorten" />
+
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/et_custom"
+            android:gravity="center"
+            android:hint="Customize text here"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/customedittextmanual"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/customlay"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/logo_color"
+            android:text="Customize"
+            android:id="@+id/bt_customize"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:id="@+id/share_copy_lay"
+            android:visibility="gone"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@color/logo_color"
+                android:text="share"
+                android:id="@+id/bt_share"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/logo_color"
+                android:text="Copy"
+                android:id="@+id/bt_copy"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/shareprogress"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Copyright &#169; 2017 Dell"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>

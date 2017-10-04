@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "79729720612",
+    "firebase_url": "https://nfaktornote.firebaseio.com",
+    "project_id": "nfaktornote",
+    "storage_bucket": "nfaktornote.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79729720612:android:0775115920b969d5",
+        "android_client_info": {
+          "package_name": "nfactornote.android.com.nfactorenote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79729720612-p7m541cr5f66tfqtcpvd5754sbqtorl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nfactornote.android.com.nfactorenote",
+            "certificate_hash": "9b092053c99bf6ec2849a0d8c7578fdfd27b6287"
+          }
+        },
+        {
+          "client_id": "79729720612-mdv6882idibkv18cssg9trm21fokvtuo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxELUXqOH7hmT5FfPRbxM2a5WO2V_IYYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79729720612-mdv6882idibkv18cssg9trm21fokvtuo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

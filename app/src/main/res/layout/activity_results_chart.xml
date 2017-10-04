@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relResultchart"
+    tools:context="nfactornote.android.com.nfactorenote.Activity.ResultsChart">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_charttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuopen"
+            android:visibility="gone"
+            android:background="@mipmap/ic_menu_black_24dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:id="@+id/menuclose"
+            android:background="@mipmap/ic_clear_black_24dp"/>
+        <ImageView
+            android:id="@+id/yourlogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app_logo"
+            android:padding="8dp"
+            android:layout_gravity="left"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/empty_message"
+        android:layout_centerInParent="true"
+        android:text="No URL has Selected"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/et_id"
+        android:layout_centerInParent="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:id="@+id/scrollchart"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/logo_color"
+                android:layout_height="1dp"></LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/pierelativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:id="@+id/headingpietext"
+                    android:layout_height="wrap_content"
+                    android:text="Browser Market Shares"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@id/headingpietext"
+                    android:id="@+id/relpie2">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:id="@+id/piestartdate"
+                            android:hint="Start Date"
+                            android:background="@drawable/customedittext"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="wrap_content"
+                            android:text="to"/>
+                        <EditText
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:id="@+id/pieEndDate"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:hint="End Date"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/customedittext"/>
+                        <Spinner
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/piechatspinner"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/customedittext"></Spinner>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechart"
+                    android:layout_below="@id/relpie2"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/logo_color"
+                android:layout_height="1dp"></LinearLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/tdpierelativelayout"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="200dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/tdpiechart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--below should be always place below-->
+    <include layout="@layout/listviewlayout"
+        android:visibility="gone"></include>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/logo_color"
+        android:id="@+id/openlistDraw"
+        android:layout_marginTop="65dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_arrow_back_black_24dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Copyright &#169; 2017 Dell"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listviewlay"
+    android:visibility="visible"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="200dp"
+    android:layout_marginTop="55dp"
+    android:layout_marginBottom="52dp"
+    android:layout_height="match_parent">
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/smallsearch"
+        ></SearchView>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"/>
+    <ListView
+        android:layout_below="@id/smallsearch"
+        android:layout_marginTop="2dp"
+        android:id="@+id/iv_urlLts"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:background="@color/dellorange"
+        android:layout_height="match_parent"></ListView>
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:id="@+id/closelistview"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/cericle">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_clear_black_24dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

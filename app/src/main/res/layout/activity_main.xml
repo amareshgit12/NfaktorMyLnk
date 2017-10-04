@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainrel"
+    android:background="@color/background"
+    tools:context="nfactornote.android.com.nfactorenote.Activity.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <ImageView
+            android:id="@+id/yourlogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/app_logo"
+            android:padding="8dp"
+            android:layout_gravity="left"/>
+        </android.support.v7.widget.Toolbar>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader"
+        android:visibility="gone"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@color/logo_color"
+            android:text="Consumers"
+            android:id="@+id/bt_consumers"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@color/logo_color"
+            android:text="Business Users"
+            android:id="@+id/bt_busers"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Copyright &#169; 2017 Dell"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
